@@ -1,0 +1,10 @@
+﻿global using AutoMapper;
+global using Catalog.API.Features.Categories.Dtos;
+global using Catalog.API.Repositories;
+global using FluentValidation;
+global using MassTransit;
+global using MediatR;
+global using Microsoft.EntityFrameworkCore;
+global using Shared;
+global using Shared.Extensions;
+global using System.Net;
