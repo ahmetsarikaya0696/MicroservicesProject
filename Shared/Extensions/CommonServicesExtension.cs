@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
+using Shared.Services;
 
 namespace Shared.Extensions
 {
@@ -16,6 +17,8 @@ namespace Shared.Extensions
             services.AddValidatorsFromAssemblyContaining(type);
 
             services.AddAutoMapper(type);
+
+            services.AddScoped<IIdentityService, IdentityService>();
 
             return services;
         }

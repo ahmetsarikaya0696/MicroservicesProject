@@ -28,7 +28,6 @@ namespace Shared.Extensions
         {
             var apiVersionSet = app.NewApiVersionSet()
                                    .HasApiVersion(new ApiVersion(1, 0))
-                                   .HasApiVersion(new ApiVersion(1, 1))
                                    .ReportApiVersions()
                                    .Build();
             return apiVersionSet;
